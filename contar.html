@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: black;
+            color: white;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conte apertando /\, Adicione outro contador pressionando ></h1>
+    <p></p>
+    <script>
+        let p = document.querySelector('p')
+        let contador = 0
+        document.addEventListener('keyup', function (e) {
+            if (e.key === "m") aumenta()
+        })
+        function aumenta() {
+            contador++
+            p.innerText = contador
+        }
+    </script>
+</body>
+
+</html>
