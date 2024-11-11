@@ -5,28 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body {
-            background: black;
-            color: white;
-            font-size: 30px;
-        }
-    </style>
+    <link rel="stylesheet" href="contarAssets/contarCSS.css">
 </head>
-<body>
+<body onload="rodar()">
+    <section>
     <h1>Conte apertando /\, Adicione outro contador pressionando ></h1>
-    <p></p>
-    <script>
-        let p = document.querySelector('p')
-        let contador = 0
-        document.addEventListener('keyup', function (e) {
-            if (e.key === "m") aumenta()
-        })
-        function aumenta() {
-            contador++
-            p.innerText = contador
-        }
-    </script>
+    <div class="fileira">
+        <div class="contador c0">
+            <p>0</p><button class="nonset">Adicione um atalho</button>
+        </div>
+    </div>
+</section>
+    <script src="contarAssets/contarJS.js"></script>
 </body>
 
 </html>
